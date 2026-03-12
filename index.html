@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directorio de SSST Mancomunados Venezuela</title>
     
-    <!-- Etiquetas SEO para Posicionamiento -->
-    <meta name="description" content="Directorio de Servicios de Seguridad y Salud en el Trabajo (SSST) mancomunados Tipo I y Tipo II en Venezuela. Registro y exploración de red según NT-03-2016.">
-    <meta name="keywords" content="servicios mancomunados tipo I y tipo II venezuela directorio de SSST, seguridad y salud en el trabajo, movida sst dao network, SSST venezuela, NT-03-2016">
+    <!-- Etiquetas SEO -->
+    <meta name="description" content="Directorio de Servicios de Seguridad y Salud en el Trabajo (SSST) mancomunados en Venezuela. Registro y exploración de red según NT-03-2016.">
+    <meta name="keywords" content="SSST Venezuela, Servicios Mancomunados, Seguridad y Salud Laboral, NT-03-2016, Inpsasel">
     <meta name="author" content="Movida de SST DAO Network">
 
     <!-- Tipografía Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,7 +26,7 @@
                 extend: {
                     fontFamily: { sans: ['Outfit', 'sans-serif'] },
                     colors: {
-                        brand: { 50: '#f5f7ff', 100: '#ebf0ff', 400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 900: '#312e81' }
+                        brand: { 50: '#ecfdf5', 100: '#d1fae5', 400: '#34d399', 500: '#10b981', 600: '#059669', 900: '#064e3b' }
                     }
                 }
             }
@@ -43,24 +43,24 @@
             background-attachment: fixed;
         }
         .glass-card { 
-            background: rgba(255, 255, 255, 0.7); 
-            backdrop-filter: blur(16px); 
-            -webkit-backdrop-filter: blur(16px); 
-            border: 1px solid rgba(255, 255, 255, 0.4); 
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04); 
+            background: rgba(255, 255, 255, 0.75); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05); 
         }
         .glass-input { 
-            background: rgba(255, 255, 255, 0.8); 
-            border: 1px solid rgba(226, 232, 240, 0.6); 
+            background: rgba(255, 255, 255, 0.9); 
+            border: 1px solid rgba(226, 232, 240, 0.8); 
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
         }
         .glass-input:focus-within { 
             background: #ffffff; 
-            border-color: #6366f1;
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.08); 
+            border-color: #10b981;
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1); 
         }
         .text-gradient { 
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); 
+            background: linear-gradient(135deg, #059669 0%, #047857 100%); 
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
             background-clip: text; 
@@ -71,16 +71,16 @@
         .loader { border-top-color: transparent; -webkit-animation: spinner 1s linear infinite; animation: spinner 1s linear infinite; }
         @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         
-        .tab-active { color: #4f46e5; position: relative; }
+        .tab-active { color: #059669; position: relative; }
         .tab-active::after { 
             content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
-            width: 20px; height: 3px; background: #6366f1; border-radius: 99px;
+            width: 24px; height: 3px; background: #10b981; border-radius: 99px;
         }
         
         .animate-fade-in { animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
-        .sector-cb:checked + span { background-color: #6366f1; color: #ffffff; border-color: #6366f1; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2); }
+        .sector-cb:checked + span { background-color: #10b981; color: #ffffff; border-color: #10b981; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); }
         
         .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
@@ -90,9 +90,9 @@
 </head>
 <body class="min-h-screen text-slate-800 relative overflow-x-hidden antialiased">
 
-    <!-- Orbes decorativos de fondo -->
+    <!-- Decoración de Fondo -->
     <div class="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-100/30 blur-[120px] pointer-events-none -z-10"></div>
-    <div class="fixed bottom-[-10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-purple-100/30 blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-[-10%] right-[-5%] w-[40%] h-[40%] rounded-full bg-emerald-100/30 blur-[120px] pointer-events-none -z-10"></div>
 
     <!-- Navegación -->
     <nav class="bg-white/70 backdrop-blur-xl border-b border-white/40 sticky top-0 z-50">
@@ -104,18 +104,27 @@
                         <img src="https://assets.poap.xyz/7a0347ca-c7eb-4842-b5f5-b72c364b1fff.png" alt="Logo" class="h-11 w-11 object-contain relative z-10 transition-transform group-hover:scale-105">
                     </div>
                     <div class="ml-4 flex flex-col justify-center">
-                        <span class="font-extrabold text-lg text-slate-900 tracking-tight leading-none mb-1">Movida SST <span class="text-brand-600">DAO</span></span>
-                        <a href="https://www.movidasst.com" class="text-[11px] text-slate-500 hover:text-brand-600 transition-colors font-semibold tracking-wider uppercase">movidasst.com</a>
+                        <span class="font-black text-lg text-slate-900 tracking-tight leading-none mb-1">Movida SST <span class="text-brand-600">DAO Network</span></span>
+                        <a href="https://www.movidasst.com" class="text-[10px] text-slate-400 hover:text-brand-600 transition-colors font-bold tracking-widest uppercase">movidasst.com</a>
                     </div>
                 </div>
                 
-                <div class="flex items-center bg-slate-100/50 p-1 rounded-2xl border border-slate-200/50">
-                    <button onclick="cambiarPestana('dashboard')" id="tab-btn-dashboard" class="tab-active flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl hover:text-brand-600">
-                        <i data-lucide="layout-grid" class="w-4 h-4 mr-2"></i> Explorar
-                    </button>
-                    <button onclick="cambiarPestana('registro')" id="tab-btn-registro" class="tab-inactive flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl hover:text-brand-600">
-                        <i data-lucide="plus-circle" class="w-4 h-4 mr-2"></i> Registro
-                    </button>
+                <div class="flex items-center gap-3 sm:gap-6">
+                    <!-- Botón Volver -->
+                    <a href="https://www.movidasst.com" target="_self" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 border-2 border-slate-200 text-xs sm:text-sm font-extrabold rounded-xl text-slate-600 hover:border-brand-400 hover:text-brand-600 transition-all bg-white/50 backdrop-blur-sm">
+                        <i data-lucide="arrow-left" class="w-4 h-4 sm:mr-2"></i> 
+                        <span class="hidden sm:inline">Volver a la web</span>
+                    </a>
+
+                    <!-- Tabs -->
+                    <div class="flex items-center bg-slate-100/50 p-1.5 rounded-2xl border border-slate-200/50">
+                        <button onclick="cambiarPestana('dashboard')" id="tab-btn-dashboard" class="tab-active flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl">
+                            <i data-lucide="layout-grid" class="w-4 h-4 mr-2"></i> Explorar
+                        </button>
+                        <button onclick="cambiarPestana('registro')" id="tab-btn-registro" class="tab-inactive flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl hover:text-brand-600">
+                            <i data-lucide="plus-circle" class="w-4 h-4 mr-2"></i> Registro
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,122 +132,126 @@
 
     <main class="pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         
-        <!-- Hero Section Header -->
-        <div class="pt-12 pb-16 text-center animate-fade-in">
-            <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-[10px] font-bold uppercase tracking-widest mb-4">
-                <span class="relative flex h-2 w-2 mr-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span></span>
-                Red Nacional de Prevención
+        <!-- Hero Section -->
+        <div class="pt-16 pb-12 text-center animate-fade-in">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                <span class="relative flex h-2.5 w-2.5 mr-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span></span>
+                Red Nacional de Prevención Venezuela
             </div>
-            <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight mb-4">
-                Directorio <span class="text-gradient">SSST Mancomunados</span>
+            <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
+                Directorio de <span class="text-gradient">Servicios Mancomunados</span>
             </h1>
-            <p class="text-slate-500 text-lg sm:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-                Localiza, filtra y contacta servicios de seguridad y salud en el trabajo validados bajo la NT-03-2016 en toda Venezuela.
+            <p class="text-slate-500 text-lg sm:text-xl max-w-2xl mx-auto font-medium leading-relaxed mb-8">
+                El ecosistema más completo para localizar y contactar Servicios de Seguridad y Salud en el Trabajo validados bajo la NT-03-2016.
             </p>
+            
+            <!-- Botón Canal WhatsApp -->
+            <a href="https://whatsapp.com/channel/0029Va0mlH5Jf05mrcCz8r3e" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3.5 bg-[#25D366]/10 text-[#075E54] hover:text-white border border-[#25D366]/40 hover:bg-[#25D366] hover:border-[#25D366] hover:shadow-xl hover:shadow-[#25D366]/30 font-extrabold rounded-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <svg class="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.305-.885-.653-1.481-1.46-1.654-1.758-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Únete al Canal de la Movida
+            </a>
         </div>
 
         <!-- ================= VISTA DASHBOARD ================= -->
         <div id="vista-dashboard" class="animate-fade-in space-y-10">
             
-            <!-- Grid de Estadísticas con íconos -->
+            <!-- Estadísticas Clave -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Stat 1 -->
-                <div class="glass-card rounded-[32px] p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-500/10 transition-all">
-                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-blue-500/5 rounded-full group-hover:scale-110 transition-transform"></div>
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-2xl bg-blue-50 text-blue-600"><i data-lucide="building-2" class="w-6 h-6"></i></div>
+                <div class="glass-card rounded-[32px] p-8 group hover:shadow-2xl hover:shadow-brand-500/10 transition-all border-white/60">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 rounded-2xl bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform"><i data-lucide="building-2" class="w-6 h-6"></i></div>
                     </div>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Servicios Tipo I</p>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Servicios Tipo I</p>
                     <p class="text-4xl font-black text-slate-900" id="stat-tipo1">0</p>
                 </div>
                 <!-- Stat 2 -->
-                <div class="glass-card rounded-[32px] p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-500/10 transition-all">
-                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-indigo-500/5 rounded-full group-hover:scale-110 transition-transform"></div>
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-2xl bg-indigo-50 text-indigo-600"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+                <div class="glass-card rounded-[32px] p-8 group hover:shadow-2xl hover:shadow-brand-500/10 transition-all border-white/60">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 rounded-2xl bg-indigo-50 text-indigo-600 group-hover:scale-110 transition-transform"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
                     </div>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Servicios Tipo II</p>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Servicios Tipo II</p>
                     <p class="text-4xl font-black text-slate-900" id="stat-tipo2">0</p>
                 </div>
                 <!-- Stat 3 -->
-                <div class="glass-card rounded-[32px] p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-500/10 transition-all">
-                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/5 rounded-full group-hover:scale-110 transition-transform"></div>
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-2xl bg-emerald-50 text-emerald-600"><i data-lucide="briefcase" class="w-6 h-6"></i></div>
+                <div class="glass-card rounded-[32px] p-8 group hover:shadow-2xl hover:shadow-brand-500/10 transition-all border-white/60">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 rounded-2xl bg-emerald-50 text-emerald-600 group-hover:scale-110 transition-transform"><i data-lucide="briefcase" class="w-6 h-6"></i></div>
                     </div>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Empresas Aliadas</p>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Empresas en Red</p>
                     <p class="text-4xl font-black text-slate-900" id="stat-empresas">0</p>
                 </div>
                 <!-- Stat 4 -->
-                <div class="glass-card rounded-[32px] p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-500/10 transition-all">
-                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-purple-500/5 rounded-full group-hover:scale-110 transition-transform"></div>
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-2xl bg-purple-50 text-purple-600"><i data-lucide="users" class="w-6 h-6"></i></div>
+                <div class="glass-card rounded-[32px] p-8 group hover:shadow-2xl hover:shadow-brand-500/10 transition-all border-white/60">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 rounded-2xl bg-purple-50 text-purple-600 group-hover:scale-110 transition-transform"><i data-lucide="users" class="w-6 h-6"></i></div>
                     </div>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Trabajadores</p>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Trabajadores</p>
                     <p class="text-4xl font-black text-slate-900" id="stat-trabajadores">0</p>
                 </div>
             </div>
 
-            <!-- Panel de Control e Información -->
+            <!-- Directorio Interactivo -->
             <div class="glass-card rounded-[40px] overflow-hidden border-white/50">
                 
-                <!-- Barra de Herramientas Premium -->
-                <div class="px-8 py-8 border-b border-slate-100 bg-white/50">
+                <!-- Barra de Filtros -->
+                <div class="px-8 py-8 border-b border-slate-100 bg-white/40">
                     <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
                         <div>
-                            <h3 class="text-xl font-black text-slate-900 mb-1">Directorio de Servicios</h3>
-                            <p class="text-sm text-slate-500 font-medium">Búsqueda avanzada por filtros y palabras clave</p>
+                            <h3 class="text-xl font-black text-slate-900 mb-1">Servicios Activos</h3>
+                            <p class="text-sm text-slate-500 font-medium italic">Sincronizado con el Nodo Central DAO</p>
                         </div>
                         
-                        <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+                        <div class="flex flex-wrap items-center gap-4 w-full lg:w-auto">
                             <!-- Filtro Estado -->
-                            <div class="relative group w-full sm:w-auto">
-                                <select id="filtro-estado" onchange="filtrarTabla()" class="appearance-none w-full sm:w-48 pl-5 pr-10 py-3 bg-white border border-slate-200 rounded-2xl text-sm font-bold text-slate-700 outline-none hover:border-brand-400 transition-all cursor-pointer">
+                            <div class="relative w-full sm:w-48">
+                                <select id="filtro-estado" onchange="filtrarTabla()" class="appearance-none w-full px-5 py-3 bg-white border border-slate-200 rounded-2xl text-sm font-bold text-slate-700 outline-none hover:border-brand-400 transition-all cursor-pointer">
                                     <option value="">Todos los Estados</option>
                                 </select>
-                                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-4 top-3.5 pointer-events-none transition-transform group-hover:translate-y-0.5"></i>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-4 top-3.5 pointer-events-none"></i>
                             </div>
 
                             <!-- Filtro Tipo -->
-                            <div class="relative group w-full sm:w-auto">
-                                <select id="filtro-tipo" onchange="filtrarTabla()" class="appearance-none w-full sm:w-40 pl-5 pr-10 py-3 bg-white border border-slate-200 rounded-2xl text-sm font-bold text-slate-700 outline-none hover:border-brand-400 transition-all cursor-pointer">
+                            <div class="relative w-full sm:w-40">
+                                <select id="filtro-tipo" onchange="filtrarTabla()" class="appearance-none w-full px-5 py-3 bg-white border border-slate-200 rounded-2xl text-sm font-bold text-slate-700 outline-none hover:border-brand-400 transition-all cursor-pointer">
                                     <option value="">Cualquier Tipo</option>
                                     <option value="Tipo I">Tipo I</option>
                                     <option value="Tipo II">Tipo II</option>
                                 </select>
-                                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-4 top-3.5 pointer-events-none transition-transform group-hover:translate-y-0.5"></i>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-4 top-3.5 pointer-events-none"></i>
                             </div>
 
-                            <!-- Buscador -->
+                            <!-- Buscador Libre -->
                             <div class="relative w-full sm:w-64">
                                 <input type="text" id="buscador" onkeyup="filtrarTabla()" placeholder="Municipio, sector..." class="w-full pl-12 pr-4 py-3 bg-white border border-slate-200 rounded-2xl outline-none text-sm font-medium focus:border-brand-500 transition-all">
                                 <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-4 top-3 pointer-events-none"></i>
                             </div>
 
-                            <!-- Botón Refresh -->
-                            <button onclick="cargarDatosDirectorio()" title="Sincronizar" class="p-3 bg-brand-50 text-brand-600 rounded-2xl hover:bg-brand-100 transition-all flex items-center justify-center">
+                            <!-- Botón Sincronizar -->
+                            <button onclick="cargarDatosDirectorio()" title="Sincronizar Datos" class="p-3.5 bg-brand-500 text-white rounded-2xl hover:bg-brand-600 transition-all shadow-lg shadow-brand-500/20 active:scale-95">
                                 <i data-lucide="refresh-ccw" class="w-5 h-5" id="icon-refresh"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tabla Rediseñada -->
+                <!-- Tabla de Datos -->
                 <div class="overflow-x-auto custom-scrollbar">
                     <table class="min-w-full divide-y divide-slate-100" id="tabla-directorio">
                         <thead class="bg-slate-50/50">
                             <tr>
                                 <th class="px-8 py-5 text-left text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Servicio y Contacto</th>
                                 <th class="px-8 py-5 text-left text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Categoría</th>
-                                <th class="px-8 py-5 text-left text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Geolocalización</th>
+                                <th class="px-8 py-5 text-left text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Ubicación</th>
                                 <th class="px-8 py-5 text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Sectores</th>
                                 <th class="px-8 py-5 text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Capacidad</th>
-                                <th class="px-8 py-5 text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Inpsasel</th>
+                                <th class="px-8 py-5 text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Registro Inpsasel</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-slate-50 bg-white/30" id="tbody-directorio">
-                            <tr><td colspan="6" class="px-8 py-24 text-center text-slate-400 font-medium">Iniciando protocolo de sincronización...</td></tr>
+                        <tbody class="divide-y divide-slate-50 bg-white/40" id="tbody-directorio">
+                            <tr><td colspan="6" class="px-8 py-32 text-center text-slate-400 font-medium">Sincronizando con la red nacional...</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -250,47 +263,54 @@
 
         <!-- ================= VISTA REGISTRO ================= -->
         <div id="vista-registro" class="hidden animate-fade-in max-w-4xl mx-auto">
-            <div class="glass-card rounded-[40px] p-2">
-                <div class="bg-white/60 rounded-[34px] p-8 sm:p-12">
+            <div class="glass-card rounded-[40px] p-3 bg-gradient-to-b from-white/40 to-slate-100/40 border-white/60 shadow-2xl">
+                <div class="bg-white/80 backdrop-blur-2xl rounded-[32px] p-8 sm:p-12 shadow-inner border border-white">
                     <form id="ssstForm" class="space-y-10">
-                        <!-- Estructura del formulario (Mantenida pero estilizada) -->
-                        <div class="space-y-8">
-                            <h2 class="text-2xl font-black text-slate-900 border-l-4 border-brand-500 pl-4">Identificación Legal</h2>
+                        
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3">Directorio de <span class="text-gradient">Servicios</span></h2>
+                            <p class="text-slate-500 font-medium">Llene el formulario para registrar su SSST en la red nacional. El sistema validará automáticamente su cumplimiento con la NT-03-2016.</p>
+                        </div>
+                        
+                        <!-- Bloque 1: Identificación -->
+                        <div class="bg-slate-50/80 p-6 sm:p-8 rounded-[32px] border border-slate-200/60 shadow-sm">
+                            <h3 class="text-xl font-black text-slate-800 border-l-4 border-brand-500 pl-4 mb-6">Identificación Legal</h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="md:col-span-2">
-                                    <label class="block text-sm font-bold text-slate-700 mb-1">Nombre del SSST</label>
-                                    <p class="text-[11px] text-slate-400 mb-2">Denominación oficial autorizada.</p>
-                                    <input type="text" name="nombreSSST" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="Escriba el nombre completo...">
+                                    <label class="block text-sm font-extrabold text-slate-700 mb-2">Nombre del SSST</label>
+                                    <input type="text" name="nombreSSST" required class="w-full px-6 py-4 bg-white border border-slate-200 rounded-2xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Nombre completo oficial">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-bold text-slate-700 mb-1">RIF de la Empresa Prestadora</label>
-                                    <input type="text" name="rif" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="J-00000000-0">
+                                    <label class="block text-sm font-extrabold text-slate-700 mb-2">RIF de la Empresa Prestadora</label>
+                                    <input type="text" name="rif" required class="w-full px-6 py-4 bg-white border border-slate-200 rounded-2xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="J-00000000-0">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-bold text-slate-700 mb-1">NIL</label>
-                                    <input type="text" name="nil" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="Número de registro NIL">
+                                    <label class="block text-sm font-extrabold text-slate-700 mb-2">NIL</label>
+                                    <input type="text" name="nil" required class="w-full px-6 py-4 bg-white border border-slate-200 rounded-2xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Número de registro NIL">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="space-y-8">
-                            <h2 class="text-2xl font-black text-slate-900 border-l-4 border-emerald-500 pl-4">Alcance y Clasificación</h2>
-                            <div class="bg-slate-50/50 p-8 rounded-[32px] border border-slate-100">
-                                <label class="block text-sm font-bold text-slate-700 mb-2">Tipo de Mancomunidad (Art. 19)</label>
-                                <p class="text-[11px] text-slate-400 mb-6">Elija según la ubicación física de las entidades de trabajo.</p>
+                        <!-- Bloque 2: Alcance y Sectores -->
+                        <div class="bg-emerald-50/40 p-6 sm:p-8 rounded-[32px] border border-emerald-100/60 shadow-sm">
+                            <h3 class="text-xl font-black text-emerald-800 border-l-4 border-emerald-500 pl-4 mb-6">Alcance y Clasificación</h3>
+                            
+                            <div class="mb-8">
+                                <label class="block text-sm font-extrabold text-slate-700 mb-2">Tipo de Mancomunidad (Art. 19)</label>
+                                <p class="text-xs text-slate-500 mb-4">Seleccione según la ubicación física de las entidades de trabajo.</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
                                     <label class="flex-1 cursor-pointer">
                                         <input type="radio" name="tipoSST" value="Tipo I" required class="sr-only peer">
-                                        <div class="p-5 border-2 border-slate-200 rounded-2xl peer-checked:border-brand-500 peer-checked:bg-brand-50/50 transition-all text-center">
-                                            <p class="font-black text-slate-800">Tipo I</p>
-                                            <p class="text-[10px] text-slate-500 mt-1">Misma edificación / CC</p>
+                                        <div class="p-5 border-2 border-slate-200 bg-white rounded-[24px] peer-checked:border-brand-500 peer-checked:bg-brand-50 transition-all text-center shadow-sm hover:border-brand-300">
+                                            <p class="font-black text-lg text-slate-800">Tipo I</p>
+                                            <p class="text-[11px] text-slate-500 mt-1 font-medium">Misma edificación, centro comercial o unidad física.</p>
                                         </div>
                                     </label>
                                     <label class="flex-1 cursor-pointer">
                                         <input type="radio" name="tipoSST" value="Tipo II" required class="sr-only peer">
-                                        <div class="p-5 border-2 border-slate-200 rounded-2xl peer-checked:border-brand-500 peer-checked:bg-brand-50/50 transition-all text-center">
-                                            <p class="font-black text-slate-800">Tipo II</p>
-                                            <p class="text-[10px] text-slate-500 mt-1">Diferentes sedes / Misma zona</p>
+                                        <div class="p-5 border-2 border-slate-200 bg-white rounded-[24px] peer-checked:border-brand-500 peer-checked:bg-brand-50 transition-all text-center shadow-sm hover:border-brand-300">
+                                            <p class="font-black text-lg text-slate-800">Tipo II</p>
+                                            <p class="text-[11px] text-slate-500 mt-1 font-medium">Diferentes centros o unidades físicas en la misma zona.</p>
                                         </div>
                                     </label>
                                 </div>
@@ -298,81 +318,130 @@
                             </div>
 
                             <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-4">Sectores Económicos Integrados</label>
-                                <div class="glass-input p-6 rounded-[32px] space-y-6">
+                                <label class="block text-sm font-extrabold text-slate-700 mb-4">Sectores Económicos Integrados</label>
+                                <div class="bg-white p-6 rounded-[24px] border border-slate-200 shadow-sm space-y-6">
                                     <div>
-                                        <p class="text-[10px] font-black text-amber-600 uppercase tracking-widest mb-3">Vigilancia Art. 13 (Alto Riesgo)</p>
+                                        <p class="text-[10px] font-black text-amber-600 uppercase tracking-[0.1em] mb-3"><i data-lucide="alert-triangle" class="w-3 h-3 inline mr-1 -mt-0.5"></i> Vigilancia Art. 13 (Alto Riesgo)</p>
                                         <div class="flex flex-wrap gap-2">
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Manufactura" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Manufactura</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Salud" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Salud</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Construcción" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Construcción</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Minas" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Minería</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Manufactura" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Manufactura</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Salud" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Salud</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Construcción" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Construcción</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Minas" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Minería</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Electricidad" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Electricidad/Agua</span></label>
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Otros Sectores</p>
+                                        <p class="text-[10px] font-black text-slate-400 uppercase tracking-[0.1em] mb-3">Sectores Regulares</p>
                                         <div class="flex flex-wrap gap-2">
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Comercio" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Comercio</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Transporte" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Transporte</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Educación" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Educación</span></label>
-                                            <label class="cursor-pointer group"><input type="checkbox" name="sector" value="Otros" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 transition-all hover:bg-slate-50 inline-block">Otros</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Comercio" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Comercio</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Transporte" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Transporte</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Educación" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Educación</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Finanzas" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Finanzas</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Servicios" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Servicios Prof.</span></label>
+                                            <label class="cursor-pointer"><input type="checkbox" name="sector" value="Otros" class="sector-cb sr-only" onchange="validarNormativa()"><span class="px-4 py-2 text-xs font-bold rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 transition-all inline-block uppercase tracking-wider">Otros</span></label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Capacidad y Contacto (Se mantienen iguales pero con inputs redondeados) -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-slate-100">
-                             <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-1">Empresas</label>
-                                <input type="number" name="empresas" id="inputEmpresas" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" oninput="validarNormativa()">
+                        <!-- Bloque 3: Capacidad y Profesionales -->
+                        <div class="bg-blue-50/40 p-6 sm:p-8 rounded-[32px] border border-blue-100/60 shadow-sm">
+                            <h3 class="text-xl font-black text-blue-900 border-l-4 border-blue-500 pl-4 mb-6">Capacidad y Equipo Profesional</h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                 <div>
+                                    <label class="block text-sm font-extrabold text-slate-700 mb-2">Cantidad de Empresas en Red</label>
+                                    <input type="number" name="empresas" id="inputEmpresas" required class="w-full px-6 py-4 bg-white border border-slate-200 rounded-2xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Máx. 20 empresas" oninput="validarNormativa()">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-extrabold text-slate-700 mb-2">Total de Trabajadores</label>
+                                    <input type="number" name="trabajadores" id="inputTrabajadores" required class="w-full px-6 py-4 bg-white border border-slate-200 rounded-2xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Suma de toda la red" oninput="validarNormativa()">
+                                </div>
                             </div>
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-1">Trabajadores</label>
-                                <input type="number" name="trabajadores" id="inputTrabajadores" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" oninput="validarNormativa()">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-1">Profesionales</label>
-                                <input type="number" name="integrantes" id="inputIntegrantes" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" oninput="validarNormativa()">
+
+                            <!-- Destacado: Profesionales -->
+                            <div class="bg-white p-6 rounded-[24px] border-2 border-blue-100 shadow-sm">
+                                <label class="block text-base font-black text-slate-800 mb-2">Cantidad Total de Profesionales</label>
+                                <p class="text-xs text-slate-500 mb-4">Indique el número exacto de profesionales que conforman la nómina del Servicio de Seguridad y Salud en el Trabajo.</p>
+                                <input type="number" name="integrantes" id="inputIntegrantes" required class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none text-lg font-bold text-slate-900 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all mb-4" placeholder="Ej: 3, 5, 8..." oninput="validarNormativa()">
+                                
+                                <!-- Checklist Visual de Profesionales -->
+                                <div class="pt-4 border-t border-slate-100">
+                                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Equipo Multidisciplinario Básico (Mínimo)</p>
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                        <div class="flex items-center text-slate-600 text-xs font-bold bg-blue-50/50 p-2.5 rounded-xl border border-blue-100/50"><i data-lucide="check-square" class="w-4 h-4 text-blue-500 mr-2"></i> Médico Ocup.</div>
+                                        <div class="flex items-center text-slate-600 text-xs font-bold bg-blue-50/50 p-2.5 rounded-xl border border-blue-100/50"><i data-lucide="check-square" class="w-4 h-4 text-blue-500 mr-2"></i> Enfermero/a</div>
+                                        <div class="flex items-center text-slate-600 text-xs font-bold bg-blue-50/50 p-2.5 rounded-xl border border-blue-100/50"><i data-lucide="check-square" class="w-4 h-4 text-blue-500 mr-2"></i> Ing. / Téc. HSL</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="warningPanel" class="hidden bg-amber-50 border border-amber-200 rounded-[24px] p-6 text-sm text-amber-800 animate-fade-in">
-                            <div class="flex"><i data-lucide="alert-circle" class="w-6 h-6 mr-4 flex-shrink-0 text-amber-500"></i><div id="warningText" class="font-semibold leading-relaxed"></div></div>
+                        <!-- Advertencia Legal (Se muestra si hay error) -->
+                        <div id="warningPanel" class="hidden bg-amber-50 border-2 border-amber-200 rounded-[24px] p-6 text-sm text-amber-800 animate-fade-in shadow-lg shadow-amber-500/10">
+                            <div class="flex items-start"><i data-lucide="alert-circle" class="w-6 h-6 mr-4 flex-shrink-0 text-amber-500"></i><div id="warningText" class="font-bold leading-relaxed pt-0.5"></div></div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-                            <input type="text" name="nombreJefe" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="Nombre Responsable">
-                            <input type="email" name="correoSSST" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="Email de contacto">
-                            <input type="tel" name="whatsapp" class="glass-input w-full px-6 py-4 rounded-2xl outline-none" placeholder="WhatsApp (+58...)">
-                            <div class="grid grid-cols-2 gap-3">
-                                <select id="estado" name="estado" required class="glass-input w-full px-6 py-4 rounded-2xl outline-none appearance-none" onchange="actualizarMunicipios()">
-                                    <option value="" disabled selected>Estado</option>
-                                </select>
-                                <select id="municipio" name="municipio" required disabled class="glass-input w-full px-6 py-4 rounded-2xl outline-none appearance-none disabled:opacity-50">
-                                    <option value="" disabled selected>Municipio</option>
-                                </select>
+                        <!-- Bloque 4: Contacto y Ubicación -->
+                        <div class="bg-slate-50/80 p-6 sm:p-8 rounded-[32px] border border-slate-200/60 shadow-sm">
+                            <h3 class="text-xl font-black text-slate-800 border-l-4 border-slate-400 pl-4 mb-6">Ubicación y Contacto</h3>
+                            
+                            <div class="mb-6">
+                                <label class="block text-sm font-extrabold text-slate-700 mb-3">Registro Inpsasel</label>
+                                <div class="flex gap-6">
+                                    <label class="inline-flex items-center cursor-pointer"><input type="radio" name="registrado" value="Sí" required class="form-radio w-5 h-5 text-brand-600"><span class="ml-2 font-bold text-slate-700">Sí, registrado</span></label>
+                                    <label class="inline-flex items-center cursor-pointer"><input type="radio" name="registrado" value="En trámite" required class="form-radio w-5 h-5 text-brand-600"><span class="ml-2 font-bold text-slate-700">En trámite</span></label>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">Nombre del Responsable</label>
+                                    <input type="text" name="nombreJefe" required class="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Ej: Dr. Pérez">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">Email Oficial</label>
+                                    <input type="email" name="correoSSST" required class="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="correo@ejemplo.com">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">Número WhatsApp</label>
+                                    <input type="tel" name="whatsapp" class="w-full px-5 py-3.5 bg-white border border-slate-200 rounded-xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all" placeholder="Ej: 04121234567">
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">Estado</label>
+                                        <select id="estado" name="estado" required class="w-full px-4 py-3.5 bg-white border border-slate-200 rounded-xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all appearance-none cursor-pointer" onchange="actualizarMunicipios()">
+                                            <option value="" disabled selected>Elegir...</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-2">Municipio</label>
+                                        <select id="municipio" name="municipio" required disabled class="w-full px-4 py-3.5 bg-white border border-slate-200 rounded-xl outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all appearance-none disabled:opacity-50 cursor-pointer">
+                                            <option value="" disabled selected>Elegir...</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <button type="submit" id="btnSubmit" class="w-full bg-slate-900 text-white font-black py-5 px-8 rounded-3xl transition-all shadow-xl hover:bg-brand-600 hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center group">
-                            <span id="btnText">Validar y Unirse a la Red</span>
-                            <i data-lucide="chevron-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
-                            <div id="btnLoader" class="hidden loader border-2 border-white/30 border-t-white rounded-full w-5 h-5 ml-3"></div>
+                        <!-- Botón de Envío -->
+                        <button type="submit" id="btnSubmit" class="w-full bg-brand-600 text-white font-black py-6 px-10 rounded-[24px] transition-all shadow-xl hover:bg-brand-700 hover:shadow-brand-500/30 hover:scale-[1.01] active:scale-[0.98] flex justify-center items-center group overflow-hidden relative mt-8">
+                            <span class="relative z-10 flex items-center text-lg tracking-wide" id="btnText">Validar y Unirse a la Red Nacional <i data-lucide="chevron-right" class="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform"></i></span>
+                            <div id="btnLoader" class="hidden loader border-3 border-white/30 border-t-white rounded-full w-6 h-6 ml-4 relative z-10"></div>
                         </button>
                     </form>
 
-                    <!-- Éxito -->
-                    <div id="successModal" class="hidden text-center py-16 animate-fade-in">
-                        <div class="mx-auto flex items-center justify-center h-24 w-24 rounded-full bg-emerald-100 text-emerald-600 mb-8 border-8 border-emerald-50"><i data-lucide="check-check" class="h-10 w-10"></i></div>
-                        <h3 class="text-4xl font-black text-slate-900 mb-4">¡Registro Exitoso!</h3>
-                        <p class="text-slate-500 text-lg mb-10 max-w-sm mx-auto">La mancomunidad ha sido validada e incorporada al ecosistema nacional.</p>
-                        <div class="bg-white rounded-[32px] p-10 shadow-2xl inline-block border-b-8 border-brand-500">
-                            <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Código Único de Identificación</p>
-                            <p id="codigoConfirmacion" class="text-5xl font-mono font-black text-slate-900 tracking-tighter">---</p>
+                    <!-- Modal Éxito (Se mantiene igual) -->
+                    <div id="successModal" class="hidden text-center py-20 animate-fade-in">
+                        <div class="mx-auto flex items-center justify-center h-28 w-28 rounded-full bg-emerald-100 text-emerald-600 mb-10 border-[10px] border-emerald-50"><i data-lucide="check-check" class="h-12 w-12"></i></div>
+                        <h3 class="text-5xl font-black text-slate-900 mb-6 tracking-tighter">¡Registro Validado!</h3>
+                        <p class="text-slate-500 text-xl mb-12 max-w-sm mx-auto font-medium">La mancomunidad ha sido sincronizada exitosamente con el directorio nacional.</p>
+                        <div class="bg-white rounded-[40px] p-12 shadow-2xl inline-block border-b-[12px] border-brand-500">
+                            <p class="text-[11px] font-black text-slate-400 uppercase tracking-[0.3em] mb-4">Certificado de Registro</p>
+                            <p id="codigoConfirmacion" class="text-6xl font-mono font-black text-slate-900 tracking-tighter">---</p>
                         </div>
-                        <button type="button" onclick="reiniciarFormulario()" class="block mx-auto mt-12 text-slate-900 font-black hover:text-brand-600 text-sm tracking-wide transition-colors">REGISTRAR OTRO SERVICIO</button>
+                        <button type="button" onclick="reiniciarFormulario()" class="block mx-auto mt-16 text-slate-900 font-black hover:text-brand-600 text-sm tracking-[0.2em] transition-colors uppercase">Registrar Nuevo Nodo</button>
                     </div>
                 </div>
             </div>
@@ -381,6 +450,7 @@
     </main>
 
     <script>
+        // Configuración Backend
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwBY8fZS75U_bgAB3aOA_Ach4WCXeOjaQEogsDR4eYCeHPF1U0HmDsa5rtkuoVe9uJ_/exec';
         
         const dataVenezuela = {
@@ -410,6 +480,7 @@
             "Zulia": ["Almirante Padilla", "Baralt", "Cabimas", "Catatumbo", "Colón", "Francisco Javier Pulgar", "Jesús Enrique Lossada", "Jesús María Semprún", "La Cañada de Urdaneta", "Lagunillas", "Machiques de Perijá", "Mara", "Maracaibo", "Miranda", "Guajira", "Rosario de Perijá", "San Francisco", "Santa Rita", "Simón Bolívar", "Sucre", "Valmore Rodríguez"]
         };
 
+        // Declaraciones globales de elementos del DOM
         const form = document.getElementById('ssstForm');
         const selectEstado = document.getElementById("estado");
         const selectMunicipio = document.getElementById("municipio");
@@ -421,10 +492,15 @@
 
         window.onload = function() {
             lucide.createIcons();
-            let optionsHTML = Object.keys(dataVenezuela).sort().map(e => `<option value="${e}">${e}</option>`).join('');
-            if (selectEstado) selectEstado.innerHTML += optionsHTML;
-            const filtroEstado = document.getElementById("filtro-estado");
-            if (filtroEstado) filtroEstado.innerHTML += optionsHTML;
+            // Llenar select de estados en formulario
+            if (selectEstado) {
+                let optionsHTML = Object.keys(dataVenezuela).sort().map(e => `<option value="${e}">${e}</option>`).join('');
+                selectEstado.innerHTML += optionsHTML;
+                
+                // Llenar filtro de estado en dashboard
+                const filtroEstado = document.getElementById("filtro-estado");
+                if (filtroEstado) filtroEstado.innerHTML += optionsHTML;
+            }
             cargarDatosDirectorio();
         };
 
@@ -435,14 +511,16 @@
             const td = document.getElementById('tab-btn-dashboard');
             
             if(p === 'registro') {
-                vr.classList.remove('hidden'); vd.classList.add('hidden');
-                tr.className = 'tab-active flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl';
-                td.className = 'tab-inactive flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl';
+                if (vr) vr.classList.remove('hidden'); 
+                if (vd) vd.classList.add('hidden');
+                if (tr) tr.className = 'tab-active flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl';
+                if (td) td.className = 'tab-inactive flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl hover:text-brand-600';
                 validarNormativa();
             } else {
-                vr.classList.add('hidden'); vd.classList.remove('hidden');
-                tr.className = 'tab-inactive flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl';
-                td.className = 'tab-active flex items-center px-4 py-2 text-sm font-bold transition-all rounded-xl';
+                if (vr) vr.classList.add('hidden'); 
+                if (vd) vd.classList.remove('hidden');
+                if (tr) tr.className = 'tab-inactive flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl hover:text-brand-600';
+                if (td) td.className = 'tab-active flex items-center px-5 py-2.5 text-sm font-extrabold transition-all rounded-xl';
                 cargarDatosDirectorio();
             }
         }
@@ -454,23 +532,24 @@
             
             if (al) al.classList.add('hidden'); 
             if (ic) ic.classList.add('animate-spin');
-            if (tb) tb.innerHTML = '<tr><td colspan="6" class="px-8 py-32 text-center text-slate-400 font-medium tracking-wide">Sincronizando base de datos nacional...</td></tr>';
+            if (tb) tb.innerHTML = '<tr><td colspan="6" class="px-8 py-32 text-center text-slate-400 font-bold tracking-[0.1em] uppercase text-xs">Sincronizando nodos nacionales...</td></tr>';
 
             try {
                 const response = await fetch(`${scriptURL}?action=getDatos&t=${Date.now()}`, { method: 'GET', redirect: 'follow' });
-                if (!response.ok) throw new Error("Error servidor");
+                if (!response.ok) throw new Error("Server Error");
                 const data = await response.json();
                 renderizarTabla(data);
                 calcularEstadisticas(data);
             } catch (e) {
                 if (al) {
                     al.classList.remove('hidden');
-                    al.innerHTML = '<div class="flex text-amber-700 text-sm font-bold"><i data-lucide="alert-triangle" class="w-5 h-5 mr-3"></i>Error de sincronización. Visualizando datos en modo local.</div>';
+                    al.innerHTML = '<div class="flex text-amber-700 text-sm font-bold"><i data-lucide="alert-triangle" class="w-6 h-6 mr-4"></i>Error de conexión. Mostrando datos de respaldo locales.</div>';
                 }
-                tb.innerHTML = '<tr><td colspan="6" class="px-8 py-24 text-center text-red-500 font-bold bg-red-50/20"><i data-lucide="wifi-off" class="w-10 h-10 mx-auto mb-4 opacity-40"></i>No se pudo conectar con Google Sheets</td></tr>';
-                lucide.createIcons();
+                renderizarTabla([]);
             } finally { 
-                if (ic) ic.classList.remove('animate-spin'); 
+                // CORRECCIÓN: Se vuelve a buscar el ícono porque la librería de íconos lo reemplazó en el DOM
+                const currentIc = document.getElementById('icon-refresh');
+                if (currentIc) currentIc.classList.remove('animate-spin'); 
             }
         }
 
@@ -479,45 +558,45 @@
             if (!tb) return;
             tb.innerHTML = '';
             
-            if (d.length === 0) {
-                tb.innerHTML = '<tr><td colspan="6" class="px-8 py-16 text-center text-slate-400 font-bold">No se encontraron registros activos.</td></tr>';
+            if (!d || d.length === 0) {
+                tb.innerHTML = '<tr><td colspan="6" class="px-8 py-20 text-center text-slate-400 font-black">NO SE ENCONTRARON REGISTROS</td></tr>';
                 return;
             }
 
             d.forEach(r => {
-                let statusColor = r.registrado === 'Sí' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-amber-50 text-amber-600 border-amber-100';
-                let btnCorreo = r.correoSSST ? `<a href="mailto:${r.correoSSST}" class="p-1.5 hover:bg-brand-50 text-brand-600 rounded-lg transition-all" title="Email"><i data-lucide="mail" class="w-3.5 h-3.5"></i></a>` : '';
-                let btnWa = r.whatsapp ? `<a href="https://wa.me/${String(r.whatsapp).replace(/\D/g,'')}" target="_blank" class="p-1.5 hover:bg-emerald-50 text-emerald-600 rounded-lg transition-all" title="WhatsApp"><i data-lucide="phone" class="w-3.5 h-3.5"></i></a>` : '';
+                let sColor = r.registrado === 'Sí' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' : 'bg-amber-50 text-amber-600 border-amber-100';
+                let btnMail = r.correoSSST ? `<a href="mailto:${r.correoSSST}" class="p-2 hover:bg-brand-100 text-brand-600 rounded-xl transition-all" title="Email"><i data-lucide="mail" class="w-4 h-4"></i></a>` : '';
+                let btnWa = r.whatsapp ? `<a href="https://wa.me/${String(r.whatsapp).replace(/\D/g,'')}" target="_blank" class="p-2 hover:bg-emerald-100 text-emerald-600 rounded-xl transition-all" title="WhatsApp"><i data-lucide="phone" class="w-4 h-4"></i></a>` : '';
 
                 tb.innerHTML += `
-                    <tr class="fila-directorio hover:bg-slate-50/80 transition-all" data-estado="${r.estado || ''}" data-tipo="${r.tipoServicio || ''}">
+                    <tr class="fila-directorio hover:bg-slate-50/50 transition-all border-b border-slate-50 last:border-none" data-estado="${r.estado || ''}" data-tipo="${r.tipoServicio || ''}">
                         <td class="px-8 py-6">
                             <div class="flex items-center">
-                                <div class="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-black text-xs mr-4">${(r.nombreSSST || 'S').substring(0,1).toUpperCase()}</div>
+                                <div class="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-900 font-black text-sm mr-5">${(r.nombreSSST || 'S').substring(0,1).toUpperCase()}</div>
                                 <div>
-                                    <div class="text-sm font-black text-slate-900">${r.nombreSSST || 'Servicio Sin Nombre'}</div>
-                                    <div class="flex gap-2 mt-1">${btnCorreo}${btnWa}</div>
+                                    <div class="text-sm font-black text-slate-900 mb-1.5 leading-tight">${r.nombreSSST || 'S/N'}</div>
+                                    <div class="flex items-center gap-1">${btnMail}${btnWa}</div>
                                 </div>
                             </div>
                         </td>
                         <td class="px-8 py-6">
-                            <span class="px-3 py-1 rounded-xl text-[10px] font-black uppercase border border-slate-200 bg-white text-slate-600 shadow-sm">${r.tipoServicio || 'Tipo I'}</span>
+                            <span class="px-3 py-1.5 rounded-xl text-[10px] font-black uppercase border border-slate-200 bg-white text-slate-500 shadow-sm">${r.tipoServicio || 'TIPO I'}</span>
                         </td>
                         <td class="px-8 py-6">
-                            <div class="text-sm font-bold text-slate-800">${r.estado || '-'}</div>
-                            <div class="text-[10px] text-slate-400 font-semibold uppercase tracking-tighter">${r.municipio || '-'}</div>
+                            <div class="text-sm font-extrabold text-slate-800">${r.estado || '-'}</div>
+                            <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tight">${r.municipio || '-'}</div>
                         </td>
                         <td class="px-8 py-6 text-center">
-                             <div class="flex flex-wrap justify-center gap-1">
-                                ${(r.sector || '-').split(',').slice(0,2).map(s => `<span class="bg-slate-100 px-2 py-0.5 rounded-lg text-[9px] font-bold text-slate-500 uppercase">${s.trim()}</span>`).join('')}
+                             <div class="flex flex-wrap justify-center gap-1.5">
+                                ${(r.sector || '-').split(',').slice(0,2).map(s => `<span class="bg-slate-50 border border-slate-100 px-2 py-0.5 rounded-lg text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${s.trim()}</span>`).join('')}
                              </div>
                         </td>
                         <td class="px-8 py-6 text-center">
                             <div class="text-sm font-black text-slate-900">${r.trabajadores || 0}</div>
-                            <div class="text-[10px] text-slate-400 font-bold">${r.empresas || 0} empresas</div>
+                            <div class="text-[10px] text-slate-400 font-bold tracking-tighter uppercase">${r.empresas || 0} empresas</div>
                         </td>
                         <td class="px-8 py-6 text-center">
-                            <span class="px-3 py-1.5 text-[10px] font-black rounded-xl border ${statusColor} uppercase">${r.registrado || '-'}</span>
+                            <span class="px-4 py-2 text-[10px] font-black rounded-xl border ${sColor} uppercase tracking-widest shadow-sm">${r.registrado || '-'}</span>
                         </td>
                     </tr>
                 `;
@@ -526,29 +605,31 @@
         }
 
         function filtrarTabla() {
-            let texto = document.getElementById("buscador").value.toUpperCase();
-            let estado = document.getElementById("filtro-estado").value.toUpperCase();
-            let tipo = document.getElementById("filtro-tipo").value.toUpperCase();
+            let t = document.getElementById("buscador")?.value.toUpperCase() || "";
+            let e = document.getElementById("filtro-estado")?.value.toUpperCase() || "";
+            let y = document.getElementById("filtro-tipo")?.value.toUpperCase() || "";
             let trs = document.querySelectorAll(".fila-directorio");
             
             trs.forEach(tr => {
-                let filaTexto = tr.textContent.toUpperCase();
-                let filaEstado = (tr.getAttribute("data-estado") || "").toUpperCase();
-                let filaTipo = (tr.getAttribute("data-tipo") || "").toUpperCase();
+                let cT = tr.textContent.toUpperCase();
+                let cE = (tr.getAttribute("data-estado") || "").toUpperCase();
+                let cY = (tr.getAttribute("data-tipo") || "").toUpperCase();
                 
-                let okTexto = filaTexto.includes(texto);
-                let okEstado = estado === "" || filaEstado === estado;
-                let okTipo = tipo === "" || filaTipo.includes(tipo);
+                let oT = cT.includes(t);
+                let oE = e === "" || cE === e;
+                let oY = y === "" || cY.includes(y);
                 
-                tr.style.display = (okTexto && okEstado && okTipo) ? "" : "none";
+                tr.style.display = (oT && oE && oY) ? "" : "none";
             });
         }
 
         function validarNormativa() {
-            const tr = parseInt(inputTrabajadores.value) || 0;
-            const inte = parseInt(inputIntegrantes.value) || 0;
-            const emp = parseInt(inputEmpresas.value) || 0;
+            const tr = parseInt(inputTrabajadores?.value) || 0;
+            const inte = parseInt(inputIntegrantes?.value) || 0;
+            const emp = parseInt(inputEmpresas?.value) || 0;
             const btnSubmit = document.getElementById('btnSubmit');
+            if (!btnSubmit) return;
+
             let warns = [];
             let minP = 3;
             let bloqueoLegal = false;
@@ -562,27 +643,30 @@
                 if (emp > 20) { warns.push("Art 19: Una mancomunidad no puede exceder 20 empresas."); bloqueoLegal = true; }
                 if (tr > 250) { warns.push("Art 19: El total de trabajadores mancomunados no puede exceder 250."); bloqueoLegal = true; }
                 if (tieneAltoRiesgo && tr >= 50) { 
-                    warns.push("Art 13: Ha incluido un sector de alto riesgo y supera los 50 trabajadores. Debe ser SSST PROPIO."); 
+                    warns.push("Art 13: Por sector de alto riesgo y 50+ trabajadores, la ley exige Servicio PROPIO."); 
                     bloqueoLegal = true; 
                 }
-                if (inte > 0 && inte < minP) { warns.push(`La ley exige al menos ${minP} profesionales para su nómina.`); bloqueoLegal = true; }
+                if (inte > 0 && inte < minP) { warns.push(`La ley exige al menos ${minP} profesionales para ${tr} trabajadores.`); bloqueoLegal = true; }
             }
 
             if (sectoresSeleccionados.length === 0) { bloqueoLegal = true; }
 
-            if (warns.length > 0) { 
-                warningPanel.classList.remove('hidden'); 
-                warningText.innerHTML = warns.join("<br>"); 
-            } else { 
-                warningPanel.classList.add('hidden'); 
+            if (warningPanel) {
+                if (warns.length > 0) { 
+                    warningPanel.classList.remove('hidden'); 
+                    if (warningText) warningText.innerHTML = warns.join("<br>"); 
+                } else { 
+                    warningPanel.classList.add('hidden'); 
+                }
             }
 
             btnSubmit.disabled = bloqueoLegal;
-            btnSubmit.style.opacity = bloqueoLegal ? "0.4" : "1";
+            btnSubmit.style.opacity = bloqueoLegal ? "0.3" : "1";
             btnSubmit.style.cursor = bloqueoLegal ? "not-allowed" : "pointer";
         }
 
         function calcularEstadisticas(d) {
+            if (!d) return;
             if (document.getElementById('stat-tipo1')) document.getElementById('stat-tipo1').innerText = d.filter(x => String(x.tipoServicio).includes('Tipo I')).length;
             if (document.getElementById('stat-tipo2')) document.getElementById('stat-tipo2').innerText = d.filter(x => String(x.tipoServicio).includes('Tipo II')).length;
             if (document.getElementById('stat-empresas')) document.getElementById('stat-empresas').innerText = d.reduce((a, c) => a + (parseInt(c.empresas) || 0), 0);
@@ -592,28 +676,66 @@
         if (form) {
             form.addEventListener('submit', async e => {
                 e.preventDefault();
-                const bt = document.getElementById('btnSubmit'); const tx = document.getElementById('btnText'); const lo = document.getElementById('btnLoader');
-                bt.disabled = true; tx.innerText = 'Guardando...'; lo.classList.remove('hidden');
-                let formData = new FormData(form);
-                const sectoresArray = Array.from(document.querySelectorAll('input[name="sector"]:checked')).map(cb => cb.value);
-                formData.set('sector', sectoresArray.join(', '));
+                const bt = document.getElementById('btnSubmit'); 
+                const tx = document.getElementById('btnText'); 
+                const lo = document.getElementById('btnLoader');
+                if (!bt) return;
+                
+                bt.disabled = true; 
+                if (tx) tx.style.opacity = '0.5'; 
+                if (lo) lo.classList.remove('hidden');
+                
+                let fD = new FormData(form);
+                const sA = Array.from(document.querySelectorAll('input[name="sector"]:checked')).map(cb => cb.value);
+                fD.set('sector', sA.join(', '));
 
                 try {
-                    const res = await fetch(scriptURL, { method: 'POST', body: formData, redirect: 'follow' });
+                    const res = await fetch(scriptURL, { method: 'POST', body: fD, redirect: 'follow' });
                     const json = await res.json();
-                    if(json.status === "exito") { form.classList.add('hidden'); document.getElementById('successModal').classList.remove('hidden'); document.getElementById('codigoConfirmacion').innerText = json.codigo; }
-                } catch (err) { alert("Error de servidor. Reintente."); }
-                finally { bt.disabled = false; tx.innerText = 'Validar y Unirse a la Red'; lo.classList.add('hidden'); }
+                    if(json.status === "exito") { 
+                        form.classList.add('hidden'); 
+                        document.getElementById('successModal')?.classList.remove('hidden'); 
+                        const codElem = document.getElementById('codigoConfirmacion');
+                        if (codElem) codElem.innerText = json.codigo; 
+                    } else {
+                        alert("Error al registrar: " + (json.mensaje || "Desconocido"));
+                    }
+                } catch (err) { 
+                    alert("Error de red. Intente de nuevo."); 
+                } finally { 
+                    bt.disabled = false; 
+                    if (tx) tx.style.opacity = '1'; 
+                    if (lo) lo.classList.add('hidden'); 
+                }
             });
         }
 
         function actualizarMunicipios() {
+            if (!selectEstado) return;
             const e = selectEstado.value; 
-            if (selectMunicipio) selectMunicipio.innerHTML = '<option value="" disabled selected>Municipio</option>';
-            if(e && selectMunicipio) { selectMunicipio.disabled = false; dataVenezuela[e].sort().forEach(m => { let o = document.createElement("option"); o.text = m; o.value = m; selectMunicipio.add(o); }); }
+            if (selectMunicipio) {
+                selectMunicipio.innerHTML = '<option value="" disabled selected>Municipio</option>';
+                if(e && dataVenezuela[e]) { 
+                    selectMunicipio.disabled = false; 
+                    dataVenezuela[e].sort().forEach(m => { 
+                        let o = document.createElement("option"); 
+                        o.text = m; 
+                        o.value = m; 
+                        selectMunicipio.add(o); 
+                    }); 
+                }
+            }
         }
 
-        function reiniciarFormulario() { document.getElementById('successModal').classList.add('hidden'); form.classList.remove('hidden'); form.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); validarNormativa(); }
+        function reiniciarFormulario() { 
+            document.getElementById('successModal')?.classList.add('hidden'); 
+            if (form) {
+                form.classList.remove('hidden'); 
+                form.reset(); 
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+            validarNormativa(); 
+        }
     </script>
 </body>
 </html>
